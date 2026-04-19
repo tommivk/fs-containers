@@ -1,0 +1,5 @@
+root@eccbe10e105d:/# nano /usr/src/app/index.js
+ctr + v
+ctr + o
+enter
+ctr + x

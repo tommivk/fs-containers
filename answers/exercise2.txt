@@ -1,0 +1,5 @@
+% docker run -it ubuntu bash
+root@eccbe10e105d:/# mkdir /usr/src/app
+root@eccbe10e105d:/# touch /usr/src/app/index.js
+root@eccbe10e105d:/# exit
+exit
