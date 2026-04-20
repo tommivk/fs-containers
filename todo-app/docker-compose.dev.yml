@@ -6,8 +6,6 @@ services:
       dockerfile: dev.Dockerfile
     volumes:
       - ./todo-frontend:/usr/src/app
-    ports:
-      - 5173:5173
     container_name: hello-front-dev
 
   debug-helper:
@@ -37,8 +35,6 @@ services:
     build:
       context: ./todo-backend
       dockerfile: dev.Dockerfile
-    ports:
-      - 3000:3000
     volumes:
       - ./todo-backend:/usr/src/app
     environment:
@@ -54,3 +50,4 @@ services:
     container_name: reverse-proxy
     depends_on:
       - app
+      - backend
