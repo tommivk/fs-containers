@@ -8,4 +8,6 @@ RUN npm ci
 
 USER node
 
+ENV NODE_ENV=production
+
 CMD ["npm", "start"]
